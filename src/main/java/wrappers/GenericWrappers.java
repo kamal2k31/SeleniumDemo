@@ -136,7 +136,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * @throws IOException 
 	 * @throws COSVisitorException 
 	 */
-	//
+	
 	public void enterById(String idValue, String data) {
 		try {
 		driver.findElement(By.id(idValue)).clear();
