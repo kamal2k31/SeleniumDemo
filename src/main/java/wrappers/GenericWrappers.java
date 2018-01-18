@@ -139,7 +139,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	//
 	public void enterById(String idValue, String data) {
 		try {
-		//	driver.findElement(By.id(idValue)).clear();
+		driver.findElement(By.id(idValue)).clear();
 			driver.findElement(By.id(idValue)).sendKeys(data);	
 			reportStep("The data: "+data+" entered successfully in field :"+idValue, "PASS");
 		} catch (NoSuchElementException e) {
