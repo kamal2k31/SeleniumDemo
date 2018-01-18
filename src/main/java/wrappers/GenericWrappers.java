@@ -318,7 +318,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	public void clickById(String id) {
 		try{
 
-			driver.findElement(By.id(id)).click();
+			driver.findElementById(id);
 			reportStep("The element with id: "+id+" is clicked.", "PASS");
 
 		}catch (NoSuchElementException e) {
